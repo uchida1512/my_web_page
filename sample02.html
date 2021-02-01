@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>はじめての JaveScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Click Counter</h1>
+<button id="my-button">Click!</button>
+
+<script>
+    const myButton = document.getElementById('my-button');
+
+    myButton.addEventListener('click', event => {
+      myButton.innerHTML = `Click count: ${event.detail}`
+    });
+
+</script>
+
+</body>
+</html>
